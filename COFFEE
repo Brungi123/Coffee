@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+int price,per,newamount=0,amount,value;
+scanf("%d %d",&price,&per);
+newamount=price;
+while(price>1)
+{
+price=price-(price*per/100);
+newamount=newamount+price;
+}
+printf("%d",newamount);
+}
